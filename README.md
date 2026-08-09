@@ -25,7 +25,6 @@
 
 Este projeto foi construído utilizando as seguintes tecnologias:
 
-* *(Edite esta lista com as tecnologias reais do seu projeto, exemplos abaixo:)*
 * **HTML5 & CSS3:** Estruturação e estilização do layout.
 * **JavaScript (ES6+):** Para interatividade e animações da página.
 * **Vercel:** Hospedagem e CI/CD.
