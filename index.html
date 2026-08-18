@@ -1,200 +1,209 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="pt-BR" class="dark scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liv</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lívia Ghirardi | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <!-- Importação do CSS local -->
+    <link href="styles.css" rel="stylesheet"/>
 </head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden relative">
 
-<body>
+    <!-- Background Pattern -->
+    <div class="fixed inset-0 z-[-1] pointer-events-none bg-grid"></div>
 
-    <div class="cabecalho">
-        <a href="#home" class="logo">Lívia Amaral</a>
-
-        <div class="itens">
-            <a href="#sobre">Sobre mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades e Tecnologias</a>
-            <a href="#educacao">Educação e Experiências</a>
-            <a href="#contato">Contato</a>
-        </div>
-    </div>
-
-    <div class="home" id="home">        <div class="home-conteudo">
-            <h1>Lívia Amaral</h1>
-            <h2>Desenvolvedora de Software Júnior em Treinamento</h2>
-
-            <div class="botoes">
-                <a href="#projetos" class="btn-roxo">Veja meu Trabalho</a>
-                <a href="#contato" class="btn-branco">Entre em contato</a>
-                <a href="assets/Currículo - Lívia G Amaral - Estágio em TI.pdf" class="curriculo" target="_blank">Currículo</a>
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300">
+        <div class="flex justify-between items-center px-6 py-4 w-full max-w-[1200px] mx-auto">
+            <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="#">Lívia Ghirardi</a>
+            <div class="hidden md:flex gap-8 items-center">
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#sobre">Sobre</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#habilidades">Habilidades</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#projetos">Projetos</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#formacao">Formação</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#contato">Contato</a>
             </div>
+            <a class="hidden md:inline-flex items-center justify-center bg-[#8B5CF6] text-white px-6 py-2.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-300" href="https://github.com" target="_blank">
+                Ver GitHub
+            </a>
         </div>
-    </div>
+    </nav>
 
-    <!-- SOBRE -->
-    <div class="sobre-mim" id="sobre">
-        <div class="sobre-container">
-            <img src="assets/livia.png" class="foto">
+    <main class="w-full max-w-[1200px] mx-auto px-6 pt-32 pb-24 space-y-32">
+        
+        <!-- Hero Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh]" id="hero">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 border border-border-accent">
+                    <span class="font-code-md text-sm text-primary">Olá, eu sou a Lívia 👋</span>
+                </div>
+                <h1 class="text-3xl md:text-6xl font-headline-xl text-text-primary glow-text">
+                    Transformando ideias em soluções através da <span class="text-primary">tecnologia.</span>
+                </h1>
+                <p class="font-body-lg text-text-secondary max-w-2xl">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas apaixonada por criar interfaces intuitivas e sistemas robustos. Focada em aprendizado contínuo e em construir o futuro.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projetos" class="bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
+                        Ver meus projetos
+                    </a>
+                    <a href="#sobre" class="border border-border-accent text-primary px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:bg-secondary-container/10 transition-all duration-300">
+                        Conheça minha trajetória
+                    </a>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-4 bg-primary/10 rounded-xl blur-2xl z-0"></div>
+                <div class="glass-card rounded-xl p-6 relative z-10 shadow-2xl overflow-hidden font-code-md text-sm text-text-secondary">
+                    <div class="flex items-center gap-2 mb-4 pb-4 border-b border-border-accent/50">
+                        <div class="w-3 h-3 rounded-full bg-error"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#EAB308]"></div>
+                        <div class="w-3 h-3 rounded-full bg-[#22C55E]"></div>
+                        <span class="ml-2 text-xs opacity-50">developer_profile.sh</span>
+                    </div>
+                    <div class="space-y-2">
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ whoami</p>
+                        <p class="text-text-primary">> Lívia Ghirardi</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ cat role.txt</p>
+                        <p class="text-text-primary">> ADS Student & Software Developer</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ get-skills --top</p>
+                        <p class="text-[#38BDF8]">> ["Java", "Python", "SQL", "UI/UX"]</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ status</p>
+                        <p class="text-[#EAB308]">> Learning & Building <span class="terminal-cursor"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <div class="texto">
-                <h1>Sobre mim</h1>
-                <p>
-                    Olá! Sou Lívia Amaral, uma desenvolvedora de software júnior em treinamento. Tenho paixão por tecnologia e estou constantemente buscando aprender e aprimorar minhas habilidades. Com um background em ciência da computação, estou entusiasmada para contribuir com projetos desafiadores e crescer profissionalmente na área de desenvolvimento de software. Estou ansiosa para colaborar com equipes inovadoras e criar soluções impactantes.
+        <!-- Sobre Mim Section -->
+        <section id="sobre" class="space-y-8 scroll-mt-32">
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Sobre mim</h2>
+                <p class="font-body-lg text-text-secondary max-w-3xl">
+                    Minha jornada na tecnologia é movida pela curiosidade de entender como as coisas funcionam por trás dos panos e o desejo de resolver problemas reais através de códigos limpos e eficientes. Atualmente focada em expandir meus conhecimentos no ecossistema de desenvolvimento de software moderno.
                 </p>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- PROJETOS -->
-    <div class="projetos" id="projetos">
-        <p class="subtitulo">Aqui estão alguns dos meus projetos</p>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="assets/financesheets.webp">
-                <h3>Finance Sheets</h3>
-                <p>Perfil onde compartilho planilhas financeiras desenvolvidas para auxiliar na organização de gastos, planejamento financeiro e controle de orçamento pessoal. O conteúdo é focado em facilitar a visualização dos dados e promover uma gestão financeira mais prática e acessível. Utiliza conceitos de organização de dados e análise com Excel.</p>
-                <a href="https://www.instagram.com/finance.sheets?igsh=MWU1aHQ5YzlzcnhyOQ==" target="_blank" class="link">Acessar</a></div>
-
-            <div class="card">
-                <img src="assets/blibiotech.jpeg">
-                <h3>Bibliotech</h3>
-                <p>Perfil onde compartilho planilhas financeiras desenvolvidas para auxiliar na organização de gastos, planejamento financeiro e controle de orçamento pessoal. O conteúdo é focado em facilitar a visualização dos dados e promover uma gestão financeira mais prática e acessível. Utiliza conceitos de organização de dados e análise com Excel.</p>
-                <a href="https://blibiotech.vercel.app//" target="_blank" class="link">Acessar</a>
+        <!-- Habilidades Section -->
+        <section id="habilidades" class="space-y-8 scroll-mt-32">
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Habilidades Tecnológicas</h2>
+                <p class="text-text-secondary">Ferramentas e linguagens com as quais trabalho no dia a dia acadêmico e em projetos:</p>
             </div>
-
-            <div class="card">
-                <img src="assets/beaut.png">
-                <h3>BeautyShelf</h3>
-                <p>Aplicativo mobile em desenvolvimento voltado para organização e controle de produtos de beleza, como maquiagem, skincare e perfumes. Permite catalogar itens, acompanhar o uso e criar listas de compra, incentivando o consumo consciente. Tecnologias planejadas incluem Java, desenvolvimento mobile e banco de dados para armazenamento.</p>
-                <span>Em Desenvolvimento</span>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- HABILIDADES -->
-    <div class="habilidades" id="habilidades">
-        <h1>Habilidades</h1>
-
-        <span>Técnicas</span>
-        <p> Java </p>
-        <p> Python </p>
-        <p>Excel</p>
-        <p>PowerBI</p>
-        <p>Conhecimentos básicos em HTML5 e CSS</p>
-
-        <span>Comportamentais</span>
-        <p>Pensamento Analítico, Comunicação, Organização, Trabalho em equipe, Proatividade, Aprendizado Contínuo, Pontualidade, Agilidade</p>
-    </div>
-
-    <!-- TECNOLOGIAS -->
-    <div class="tecnologias">
-        <h1>Tecnologias</h1>
-        <p>Git e GitHub</p>
-        <p>Visual Studio Code</p>
-        <p>IntelliJ</p>
-        <p>PyCharm</p>
-        <p>Docker</p>
-    </div>
-
-    <!-- EDUCAÇÃO -->
-    <div class="educacao-experiencia" id="educacao">
-        <h1>Educação & Experiência</h1>
-
-        <div class="linha">
-
-            <div class="coluna">
-                <h2>Educação</h2>
-
-                <div class="item">
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <span>Escola e Faculdade de Tecnologia SENAI Gaspar Ricardo Junior</span>
-                    <p>Cursando o 1° Semestre</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
+                    <span class="font-code-md text-primary text-lg">Java</span>
+                    <p class="text-xs text-text-secondary">Backend & POO</p>
                 </div>
-
-                <div class="item">
-                    <h3>Ensino Médio Integrado ao Técnico em Administração</h3>
-                    <span>E E Júlio Bierrenbach Lima - 2023 à 2025</span>
+                <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
+                    <span class="font-code-md text-primary text-lg">Python</span>
+                    <p class="text-xs text-text-secondary">Automação & Lógica</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
+                    <span class="font-code-md text-primary text-lg">SQL / Bancos</span>
+                    <p class="text-xs text-text-secondary">Modelagem & Dados</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
+                    <span class="font-code-md text-primary text-lg">UI / UX</span>
+                    <p class="text-xs text-text-secondary">Interfaces</p>
                 </div>
             </div>
+        </section>
 
-            <div class="coluna">
-                <h2>Cursos Extracurriculares</h2>
+        <!-- Projetos Section -->
+        <section class="space-y-12 scroll-mt-32" id="projetos">
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Projetos em destaque</h2>
+                <p class="font-body-lg text-text-secondary max-w-2xl">Uma seleção dos meus melhores trabalhos técnicos e acadêmicos.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center text-text-secondary">
+                        <span>Prévia do Bibliotech</span>
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <h3 class="text-2xl font-headline-md text-text-primary">Bibliotech</h3>
+                        <p class="text-text-secondary">Sistema de gerenciamento de bibliotecas moderno com interface limpa e funcionalidades robustas.</p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                        </div>
+                        <div class="flex gap-4 pt-4">
+                            <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
+                            <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center text-text-secondary">
+                        <span>Prévia do BeautShelf</span>
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <h3 class="text-2xl font-headline-md text-text-primary">Ciclo</h3>
+                        <p class="text-text-secondary">Desenvolvimento de uma aplicação web interativa voltada para a conscientização social,
+educação e orientação sobre o ciclo da violência, facilitando o acesso a informações de apoio e
+utilidade pública de forma acessível e responsiva.</p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JAVASCRIPT</span>
 
-                <div class="item">
-                    <span>Senai</span>
-                    <p>Implantação de Serviços na Nuvem - AZ 900 (40h)</p>
-                    <p>Programação Oracle - Java Fundamentals (80h)</p>
-                    <p>Fundamentos do Python 1 (30h)</p>
-                    <p>Power Bi (32h)</p>
-                    <p>Excel básico (20h)</p>
-                    <p>Informática Básica (60h)</p>
-
-                    <span>Google - Coursera</span>
-                    <p>The bits and bytes of Computer Networking (21h)</p>
-                    <p>Technical Support Fundamentals (40h)</p>
+                        </div>
+                        <div class="flex gap-4 pt-4">
+                            <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
+                            <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
+        <!-- Formação Section -->
+        <section id="formacao" class="space-y-8 scroll-mt-32">
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Formação Acadêmica</h2>
+            </div>
+            <div class="glass-card p-8 rounded-2xl space-y-2">
+                <span class="text-xs font-label-caps text-primary uppercase tracking-widest">Graduação</span>
+                <h3 class="text-xl font-headline-md text-text-primary">Análise e Desenvolvimento de Sistemas</h3>
+                <p class="text-text-secondary text-sm">Foco em engenharia de software, arquitetura de sistemas, algoritmos e banco de dados.</p>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="glass-card p-10 rounded-3xl text-center space-y-6 scroll-mt-32">
+            <h2 class="text-3xl font-headline-lg text-text-primary">Vamos trabalhar juntos?</h2>
+            <p class="text-text-secondary max-w-xl mx-auto">Estou aberta a oportunidades de estágios, projetos colaborativos ou conexões na área de tecnologia.</p>
+            <a href="mailto:seu-email@exemplo.com" class="inline-block bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
+                Mande um E-mail
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-secondary border-t border-outline-variant/10 w-full py-12">
+        <div class="flex flex-col items-center gap-6 w-full px-6 max-w-[1200px] mx-auto">
+            <div class="font-headline-md text-xl text-primary tracking-tight">Lívia Ghirardi</div>
+            <div class="flex gap-6 font-label-caps text-xs uppercase tracking-widest">
+                <a href="https://github.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">LinkedIn</a>
+                <a href="mailto:seu-email@exemplo.com" class="text-text-secondary hover:text-primary transition-colors">Email</a>
+            </div>
+            <p class="font-body-sm text-xs text-text-secondary text-center">
+                © 2026 Lívia Ghirardi • ADS Student & Software Developer
+            </p>
         </div>
+    </footer>
 
-             <h2>Experiências Profissionais</h2>
-
-        <div class="exp-container">
-
-            <div class="exp-card">
-                <h3>Auxiliar de Logistíca - Jovem Aprendiz</h3>
-                <span>Solenis | 02/26 - ATUAL</span>
-                <p>Realizar conferência diária de notas fiscais, garantindo a conformidade das informações. Executar arquivo, digitalização e organização de documentos físicos e digitais, mantendo o controle e a rastreabilidade das informações. Utilizar o sistema SAP para consulta de dados. Responder e gerenciar e-mails relacionados às ocorrências diárias da logística de entregas de cargas, auxiliando na comunicação e resolução de pendências.</p>
-            </div>
-
-            <div class="exp-card">
-                <h3>Aluna Monitora - Língua Portuguesa</h3>
-                <span>E E Júlio Bierrenbach Lima | 09/2025 - 11/2025</span>
-                <p>Reforço em habilidades essenciais para o SAEB e o SARESP nas séries finais, especificamente o 9º ano do ensino fundamental e a 3ª série do ensino médio, suporte em Língua Portuguesa.</p>
-            </div>
-
-            <div class="exp-card">
-                <h3>Auxiliar Administrativo</h3>
-                <span> Consórcio Novo Sorocaba Ambiental | 03/24 - 06/25 </span>
-                <p>Organização e controle de documentos, atendimento telefônico ao público e suporte a colaboradores. Registro e gerenciamento de atestados médicos. Apoio ao setor de Recursos Humanos com abertura de prontuários, participação em processos seletivos e organização de holerites e cartões de ponto. Levantamento e conferência de documentos, execução de rotinas administrativas e verificação diária dos apontamentos nos cartões de ponto.</p>
-            </div>
-
-        </div>
-    </div>
-    </div>
-
-</div>
-    </div>
-
-    <!-- CONTATO -->
-    <div class="contato" id="contato">
-        <h1>Contato</h1>
-        <p class="subtitulo">Vamos conversar? Me chama 👇</p>
-
-        <div class="contato-container">
-
-            <div class="contato-item">
-                <h3>Email</h3>
-                <a href="mailto:contato.liviaghirardi@gmail.com">contato.liviaghirardi@gmail.com</a>
-            </div>
-
-            <div class="contato-item">
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/in/líviaghirardi" target="_blank">linkedin.com/in/líviaghirardi</a>
-            </div>
-
-            <div class="contato-item">
-                <h3>GitHub</h3>
-                <a href="https://github.com/liviaghirardi" target="_blank">github.com/liviaghirardi</a>
-            </div>
-
-        </div>
-    </div>
-
+    <!-- Importação do JS local -->
+    <script src="script.js"></script>
 </body>
 </html>
