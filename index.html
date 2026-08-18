@@ -7,27 +7,26 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <!-- Importação do CSS local -->
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body class="font-body-md text-body-md antialiased overflow-x-hidden relative">
 
-    <!-- Background Pattern -->
     <div class="fixed inset-0 z-[-1] pointer-events-none bg-grid"></div>
 
     <!-- TopNavBar -->
     <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300">
         <div class="flex justify-between items-center px-6 py-4 w-full max-w-[1200px] mx-auto">
-            <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="#">Lívia Ghirardi</a>
+            <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="index.html">Lívia Ghirardi</a>
             <div class="hidden md:flex gap-8 items-center">
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#sobre">Sobre</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#habilidades">Habilidades</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#projetos">Projetos</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#formacao">Formação</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="#contato">Contato</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#sobre">Sobre</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#habilidades">Habilidades</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#projetos">Projetos</a>
+                <!-- Link alterado para apontar para a nova página -->
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="formacao.html">Formação</a>
+                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#contato">Contato</a>
             </div>
             <a class="hidden md:inline-flex items-center justify-center bg-[#8B5CF6] text-white px-6 py-2.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-300" href="https://github.com" target="_blank">
-                Ver GitHub
+                GitHub
             </a>
         </div>
     </nav>
@@ -110,7 +109,7 @@
                 </div>
                 <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
                     <span class="font-code-md text-primary text-lg">UI / UX</span>
-                    <p class="text-xs text-text-secondary">Interfaces</p>
+                    <p class="text-xs text-text-secondary">Figma & Interfaces</p>
                 </div>
             </div>
         </section>
@@ -122,7 +121,6 @@
                 <p class="font-body-lg text-text-secondary max-w-2xl">Uma seleção dos meus melhores trabalhos técnicos e acadêmicos.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
                     <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center text-text-secondary">
                         <span>Prévia do Bibliotech</span>
@@ -131,8 +129,8 @@
                         <h3 class="text-2xl font-headline-md text-text-primary">Bibliotech</h3>
                         <p class="text-text-secondary">Sistema de gerenciamento de bibliotecas moderno com interface limpa e funcionalidades robustas.</p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">React</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">Node.js</span>
                         </div>
                         <div class="flex gap-4 pt-4">
                             <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
@@ -140,21 +138,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
                     <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center text-text-secondary">
                         <span>Prévia do BeautShelf</span>
                     </div>
                     <div class="p-8 space-y-4">
-                        <h3 class="text-2xl font-headline-md text-text-primary">Ciclo</h3>
-                        <p class="text-text-secondary">Desenvolvimento de uma aplicação web interativa voltada para a conscientização social,
-educação e orientação sobre o ciclo da violência, facilitando o acesso a informações de apoio e
-utilidade pública de forma acessível e responsiva.</p>
+                        <h3 class="text-2xl font-headline-md text-text-primary">BeautShelf</h3>
+                        <p class="text-text-secondary">Ferramenta elegante de organização de produtos com foco em UI/UX e experiência do usuário.</p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JAVASCRIPT</span>
-
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">Vue.js</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">Tailwind</span>
                         </div>
                         <div class="flex gap-4 pt-4">
                             <a href="#" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
@@ -162,18 +155,6 @@ utilidade pública de forma acessível e responsiva.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Formação Section -->
-        <section id="formacao" class="space-y-8 scroll-mt-32">
-            <div class="space-y-4">
-                <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Formação Acadêmica</h2>
-            </div>
-            <div class="glass-card p-8 rounded-2xl space-y-2">
-                <span class="text-xs font-label-caps text-primary uppercase tracking-widest">Graduação</span>
-                <h3 class="text-xl font-headline-md text-text-primary">Análise e Desenvolvimento de Sistemas</h3>
-                <p class="text-text-secondary text-sm">Foco em engenharia de software, arquitetura de sistemas, algoritmos e banco de dados.</p>
             </div>
         </section>
 
@@ -203,7 +184,6 @@ utilidade pública de forma acessível e responsiva.</p>
         </div>
     </footer>
 
-    <!-- Importação do JS local -->
     <script src="script.js"></script>
 </body>
 </html>
