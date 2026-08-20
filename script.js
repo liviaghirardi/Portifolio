@@ -43,3 +43,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Carregar Navbar
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            const navElement = document.getElementById("main-nav");
+            if (navElement) navElement.innerHTML = data;
+        });
+
+    // Carregar Footer
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            const footerElement = document.getElementById("main-footer");
+            if (footerElement) footerElement.innerHTML = data;
+        });
+});
