@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark scroll-smooth">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lívia Ghirardi | Portfolio</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <link href="styles.css" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body class="font-body-md text-body-md antialiased overflow-x-hidden relative">
 
     <div class="fixed inset-0 z-[-1] pointer-events-none bg-grid"></div>
 
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300">
-        <div class="flex justify-between items-center px-6 py-4 w-full max-w-[1200px] mx-auto">
-            <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="index.html">Lívia Ghirardi</a>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#sobre">Sobre</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="habilidades.html">Habilidades</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#projetos">Projetos</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="formacao.html">Formação</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="experiencias.html">Experiências</a>
-            </div>
-            <a class="hidden md:inline-flex items-center justify-center bg-[#8B5CF6] text-white px-6 py-2.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-300" href="https://github.com" target="_blank">
-                GitHub
-            </a>
-        </div>
+    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300"
+        id="main-nav">
     </nav>
 
     <main class="w-full max-w-[1200px] mx-auto px-6 pt-32 pb-24 space-y-32">
-        
+
         <!-- Hero Section -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center min-h-[70vh]" id="hero">
             <div class="lg:col-span-7 space-y-8">
-                <div class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 border border-border-accent">
+                <div
+                    class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/20 border border-border-accent">
                     <span class="font-code-md text-sm text-primary">Olá, eu sou a Lívia 👋</span>
                 </div>
                 <h1 class="text-3xl md:text-6xl font-headline-xl text-text-primary glow-text">
                     Transformando ideias em soluções através da <span class="text-primary">tecnologia.</span>
                 </h1>
                 <p class="font-body-lg text-text-secondary max-w-2xl">
-                    Sou estudante de Análise e Desenvolvimento de Sistemas apaixonada por criar interfaces intuitivas e sistemas robustos. Focada em aprendizado contínuo e em construir o futuro.
+                    Sou estudante de Análise e Desenvolvimento de Sistemas apaixonada por criar interfaces intuitivas e
+                    sistemas robustos. Focada em aprendizado contínuo e em construir o futuro.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#projetos" class="bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
+                    <a href="#projetos"
+                        class="bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
                         Ver meus projetos
                     </a>
-                    <a href="#sobre" class="border border-border-accent text-primary px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:bg-secondary-container/10 transition-all duration-300">
+                    <a href="#sobre"
+                        class="border border-border-accent text-primary px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:bg-secondary-container/10 transition-all duration-300">
                         Conheça minha trajetória
                     </a>
                 </div>
             </div>
-            
+
             <div class="lg:col-span-5 relative">
                 <div class="absolute -inset-4 bg-primary/10 rounded-xl blur-2xl z-0"></div>
-                <div class="glass-card rounded-xl p-6 relative z-10 shadow-2xl overflow-hidden font-code-md text-sm text-text-secondary">
+                <div
+                    class="glass-card rounded-xl p-6 relative z-10 shadow-2xl overflow-hidden font-code-md text-sm text-text-secondary">
                     <div class="flex items-center gap-2 mb-4 pb-4 border-b border-border-accent/50">
                         <div class="w-3 h-3 rounded-full bg-error"></div>
                         <div class="w-3 h-3 rounded-full bg-[#EAB308]"></div>
@@ -64,13 +62,17 @@
                         <span class="ml-2 text-xs opacity-50">developer_profile.sh</span>
                     </div>
                     <div class="space-y-2">
-                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ whoami</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$
+                            whoami</p>
                         <p class="text-text-primary">> Lívia Ghirardi</p>
-                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ cat role.txt</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ cat
+                            role.txt</p>
                         <p class="text-text-primary">> ADS Student & Software Developer</p>
-                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ get-skills --top</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$
+                            get-skills --top</p>
                         <p class="text-[#38BDF8]">> ["Java", "Python", "SQL", "UI/UX"]</p>
-                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$ status</p>
+                        <p><span class="text-[#22C55E]">livia@portfolio</span>:<span class="text-primary">~</span>$
+                            status</p>
                         <p class="text-[#EAB308]">> Learning & Building <span class="terminal-cursor"></span></p>
                     </div>
                 </div>
@@ -82,7 +84,10 @@
             <div class="space-y-4">
                 <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Sobre mim</h2>
                 <p class="font-body-lg text-text-secondary max-w-3xl">
-                    Sou estudante de Análise e Desenvolvimento de Sistemas com uma sólida base administrativa, o que me proporciona uma visão sistêmica e orientada a resultados na resolução de problemas. Acredito que a tecnologia vai além do código: trata-se de criar soluções eficientes que impactam positivamente a experiência das pessoas.
+                    Sou estudante de Análise e Desenvolvimento de Sistemas com uma sólida base administrativa, o que me
+                    proporciona uma visão sistêmica e orientada a resultados na resolução de problemas. Acredito que a
+                    tecnologia vai além do código: trata-se de criar soluções eficientes que impactam positivamente a
+                    experiência das pessoas.
                 </p>
             </div>
         </section>
@@ -91,7 +96,8 @@
         <section id="habilidades" class="space-y-8 scroll-mt-32">
             <div class="space-y-4">
                 <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Habilidades Tecnológicas</h2>
-                <p class="text-text-secondary">Ferramentas e linguagens com as quais trabalho no dia a dia acadêmico e em projetos:</p>
+                <p class="text-text-secondary">Ferramentas e linguagens com as quais trabalho no dia a dia acadêmico e
+                    em projetos:</p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="glass-card p-6 rounded-xl text-center space-y-2 hover:border-primary transition-colors">
@@ -114,7 +120,8 @@
 
             <!-- Botão Atrativo para Saber Mais -->
             <div class="pt-4 text-center">
-                <a href="habilidades.html" class="inline-flex items-center gap-2 bg-[#8B5CF6]/10 border border-border-accent text-primary px-8 py-3.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:bg-[#8B5CF6] hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all duration-300">
+                <a href="habilidades.html"
+                    class="inline-flex items-center gap-2 bg-[#8B5CF6]/10 border border-border-accent text-primary px-8 py-3.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:bg-[#8B5CF6] hover:text-white hover:shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all duration-300">
                     <span>Ver Stack Completa & Detalhes</span>
                     <span class="material-symbols-outlined text-sm">arrow_forward</span>
                 </a>
@@ -125,45 +132,67 @@
         <section class="space-y-12 scroll-mt-32" id="projetos">
             <div class="space-y-4">
                 <h2 class="text-3xl md:text-4xl font-headline-lg text-text-primary">Projetos em destaque</h2>
-                <p class="font-body-lg text-text-secondary max-w-2xl">Uma seleção dos meus melhores trabalhos técnicos e acadêmicos.</p>
+                <p class="font-body-lg text-text-secondary max-w-2xl">Uma seleção dos meus melhores trabalhos técnicos e
+                    acadêmicos.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
+
                 <!-- Projeto 1: Ciclo -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center">
-                        <img src="assets/logo_ciclo.png" alt="Prévia do Projeto Ciclo" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                <div
+                    class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center">
+                        <img src="assets/logo_ciclo.png" alt="Prévia do Projeto Ciclo"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8 space-y-4">
                         <h3 class="text-2xl font-headline-md text-text-primary">Ciclo</h3>
-                        <p class="text-text-secondary">O CICLO é uma plataforma web informativa focada na conscientização sobre a violência contra a mulher. O objetivo principal é educar o público de que a violência nem sempre começa com agressões físicas, detalhando o "Ciclo da Violência" e fornecendo informações cruciais sobre redes de apoio.</p>
+                        <p class="text-text-secondary">O CICLO é uma plataforma web informativa focada na
+                            conscientização sobre a violência contra a mulher. O objetivo principal é educar o público
+                            de que a violência nem sempre começa com agressões físicas, detalhando o "Ciclo da
+                            Violência" e fornecendo informações cruciais sobre redes de apoio.</p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JavaScript</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JavaScript</span>
                         </div>
                         <div class="flex gap-4 pt-4">
-                            <a href="https://conscientizacao-clicodaviolencia.vercel.app" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
-                            <a href="https://github.com/liviaghirardi/conscientizacao-clicodaviolencia" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                            <a href="https://conscientizacao-clicodaviolencia.vercel.app" target="_blank"
+                                class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver
+                                Projeto</a>
+                            <a href="https://github.com/liviaghirardi/conscientizacao-clicodaviolencia" target="_blank"
+                                class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Projeto 2: Bibliotech -->
-                <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center">
-                        <img src="assets/logo_blibiotech.jpg" alt="Prévia do Projeto Bibliotech" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                <div
+                    class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="aspect-[1.34] w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center">
+                        <img src="assets/logo_blibiotech.jpg" alt="Prévia do Projeto Bibliotech"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-8 space-y-4">
                         <h3 class="text-2xl font-headline-md text-text-primary">Bibliotech</h3>
-                        <p class="text-text-secondary">Landing Page de uma biblioteca pública moderna, com apresentação de acervo, agenda de eventos e serviços institucionais.</p>
+                        <p class="text-text-secondary">Landing Page de uma biblioteca pública moderna, com apresentação
+                            de acervo, agenda de eventos e serviços institucionais.</p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
-                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
                         </div>
                         <div class="flex gap-4 pt-4">
-                            <a href="https://blibiotech.vercel.app" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
-                            <a href="https://github.com/liviaghirardi/Blibiotech" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                            <a href="https://blibiotech.vercel.app" target="_blank"
+                                class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver
+                                Projeto</a>
+                            <a href="https://github.com/liviaghirardi/Blibiotech" target="_blank"
+                                class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -174,8 +203,10 @@
         <!-- Contato Section -->
         <section id="contato" class="glass-card p-10 rounded-3xl text-center space-y-6 scroll-mt-32">
             <h2 class="text-3xl font-headline-lg text-text-primary">Vamos trabalhar juntos?</h2>
-            <p class="text-text-secondary max-w-xl mx-auto">Estou aberta a oportunidades de estágios, projetos colaborativos ou conexões na área de tecnologia.</p>
-            <a href="mailto:seu-email@exemplo.com" class="inline-block bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
+            <p class="text-text-secondary max-w-xl mx-auto">Estou aberta a oportunidades de estágios, projetos
+                colaborativos ou conexões na área de tecnologia.</p>
+            <a href="mailto:seu-email@exemplo.com"
+                class="inline-block bg-[#8B5CF6] text-white px-8 py-3 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_20px_rgba(139,92,246,0.6)] transition-all duration-300">
                 Mande um E-mail
             </a>
         </section>
@@ -187,9 +218,12 @@
         <div class="flex flex-col items-center gap-6 w-full px-6 max-w-[1200px] mx-auto">
             <div class="font-headline-md text-xl text-primary tracking-tight">Lívia Ghirardi</div>
             <div class="flex gap-6 font-label-caps text-xs uppercase tracking-widest">
-                <a href="https://github.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">LinkedIn</a>
-                <a href="mailto:seu-email@exemplo.com" class="text-text-secondary hover:text-primary transition-colors">Email</a>
+                <a href="https://github.com" target="_blank"
+                    class="text-text-secondary hover:text-primary transition-colors">GitHub</a>
+                <a href="https://linkedin.com" target="_blank"
+                    class="text-text-secondary hover:text-primary transition-colors">LinkedIn</a>
+                <a href="mailto:seu-email@exemplo.com"
+                    class="text-text-secondary hover:text-primary transition-colors">Email</a>
             </div>
             <p class="font-body-sm text-xs text-text-secondary text-center">
                 © 2026 Lívia Ghirardi • ADS Student & Software Developer
@@ -199,4 +233,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

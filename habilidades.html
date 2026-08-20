@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark scroll-smooth">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habilidades | Lívia Ghirardi</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
 </head>
 
@@ -14,26 +18,12 @@
 
     <div class="fixed inset-0 z-[-1] pointer-events-none bg-grid"></div>
 
-    <!-- TopNavBar Corrigida -->
-    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300">
-        <div class="flex justify-between items-center px-6 py-4 w-full max-w-[1200px] mx-auto">
-            <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="index.html">Lívia Ghirardi</a>
-            <div class="hidden md:flex gap-8 items-center">
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#sobre">Sobre</a>
-                <a class="text-primary font-label-caps text-xs uppercase tracking-widest" href="habilidades.html">Habilidades</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#projetos">Projetos</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="formacao.html">Formação</a>
-                <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="experiencias.html">Experiências</a>
-            </div>
-            <a class="hidden md:inline-flex items-center justify-center bg-[#8B5CF6] text-white px-6 py-2.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-300" href="https://github.com" target="_blank">
-                GitHub
-            </a>
-        </div>
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300"
+        id="main-nav">
     </nav>
-
     <main class="w-full max-w-[1200px] mx-auto px-6 pt-32 pb-24 space-y-24">
-        <!-- O restante do seu conteúdo abaixo permanece igual -->
-        
+
         <!-- Header da Página -->
         <section class="space-y-4">
             <span class="font-code-md text-xs text-primary uppercase tracking-widest">// SKILLS</span>
@@ -53,29 +43,149 @@
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Colunas da sua Stack (permanecem iguais) -->
+
+                <!-- Coluna 1: Linguagens & Frameworks -->
                 <div class="glass-card p-6 rounded-2xl space-y-4 md:col-span-2">
-                    <span class="text-xs font-label-caps text-text-secondary uppercase tracking-widest">Linguagens & Frameworks</span>
+                    <span class="text-xs font-label-caps text-text-secondary uppercase tracking-widest">Linguagens &
+                        Frameworks</span>
                     <div class="flex flex-wrap gap-3 pt-2">
-                        <span class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
+                        <span
+                            class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
                             <span class="material-symbols-outlined text-sm">code</span> Java
                         </span>
-                        <span class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
+                        <span
+                            class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
                             <span class="material-symbols-outlined text-sm">code</span> Python
                         </span>
-                        <span class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
+                        <span
+                            class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
                             <span class="material-symbols-outlined text-sm">code</span> JavaScript
                         </span>
-                        <span class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
+                        <span
+                            class="px-4 py-2 rounded-xl bg-surface border border-border-accent font-code-md text-xs text-primary flex items-center gap-2">
                             <span class="material-symbols-outlined text-sm">terminal</span> Spring Boot
                         </span>
                     </div>
                 </div>
-                <!-- ... (mantenha o resto das colunas como estavam no seu arquivo original) -->
+
+                <!-- Coluna 2: Banco de Dados -->
+                <div class="glass-card p-6 rounded-2xl space-y-4">
+                    <span class="text-xs font-label-caps text-text-secondary uppercase tracking-widest">Banco de
+                        Dados</span>
+                    <div class="space-y-3 pt-2 font-code-md text-xs">
+                        <div class="flex justify-between items-center pb-2 border-b border-outline-variant/20">
+                            <span class="text-text-primary">PostgreSQL</span>
+                            <span class="material-symbols-outlined text-primary text-sm">database</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-text-primary">MySQL</span>
+                            <span class="material-symbols-outlined text-primary text-sm">database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 3: Ferramentas & DevOps -->
+                <div class="glass-card p-6 rounded-2xl space-y-4">
+                    <span class="text-xs font-label-caps text-text-secondary uppercase tracking-widest">Ferramentas &
+                        DevOps</span>
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <span
+                            class="px-3 py-1.5 rounded-lg bg-surface border border-border-accent font-code-md text-xs text-text-primary flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">hub</span> Git / GitHub
+                        </span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg bg-surface border border-border-accent font-code-md text-xs text-text-primary flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">view_in_ar</span> Docker
+                        </span>
+                        <span
+                            class="px-3 py-1.5 rounded-lg bg-surface border border-border-accent font-code-md text-xs text-text-primary flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">terminal</span> Linux CLI
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Coluna 4: Conceitos Arquiteturais -->
+                <div class="glass-card p-6 rounded-2xl space-y-4 md:col-span-2">
+                    <span class="text-xs font-label-caps text-text-secondary uppercase tracking-widest">Conceitos
+                        Arquiteturais</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 font-code-md text-xs text-text-secondary">
+                        <p class="flex items-center gap-2"><span class="text-primary">></span> APIs RESTful</p>
+                        <p class="flex items-center gap-2"><span class="text-primary">></span> Programação Orientada a
+                            Objetos</p>
+                        <p class="flex items-center gap-2"><span class="text-primary">></span> SOLID Principles</p>
+                        <p class="flex items-center gap-2"><span class="text-primary">></span> Clean Code</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <!-- (Continue com as seções de "Habilidades em Desenvolvimento" e "Soft Skills" que você já tinha) -->
+        <!-- Habilidades em Desenvolvimento -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-headline-md text-text-primary flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">trending_up</span> Habilidades em Desenvolvimento
+            </h2>
+
+            <div class="glass-card p-8 rounded-2xl space-y-6">
+                <!-- Nível 1 -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="font-headline-md text-text-primary">Java Ecosystem</span>
+                        <span class="font-code-md text-xs text-primary uppercase">Avançado</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full overflow-hidden border border-border-accent/40">
+                        <div class="bg-[#8B5CF6] h-full w-[85%] rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Nível 2 -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="font-headline-md text-text-primary">Python / Data Eng.</span>
+                        <span class="font-code-md text-xs text-primary uppercase">Intermediário</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full overflow-hidden border border-border-accent/40">
+                        <div class="bg-[#8B5CF6] h-full w-[65%] rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Nível 3 -->
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="font-headline-md text-text-primary">Cloud Architecture</span>
+                        <span class="font-code-md text-xs text-primary uppercase">Iniciante</span>
+                    </div>
+                    <div class="w-full bg-surface h-2 rounded-full overflow-hidden border border-border-accent/40">
+                        <div class="bg-[#8B5CF6] h-full w-[40%] rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-headline-md text-text-primary flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">psychology</span> Soft Skills
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-xl space-y-3">
+                    <h3 class="text-lg font-headline-md text-text-primary">Trabalho em Equipe</h3>
+                    <p class="text-text-secondary text-xs">Experiência em colaboração ágil, alinhamento técnico e
+                        suporte mútuo em ambientes acadêmicos e corporativos.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl space-y-3">
+                    <h3 class="text-lg font-headline-md text-text-primary">Resolução de Problemas</h3>
+                    <p class="text-text-secondary text-xs">Abordagem analítica para debugar sistemas complexos,
+                        estruturar fluxos e otimizar processos diários.</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl space-y-3">
+                    <h3 class="text-lg font-headline-md text-text-primary">Comunicação Técnica</h3>
+                    <p class="text-text-secondary text-xs">Capacidade de traduzir requisitos de negócios em soluções
+                        claras, desenvolvida através de vivências pedagógicas e administrativas.</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -84,9 +194,12 @@
         <div class="flex flex-col items-center gap-6 w-full px-6 max-w-[1200px] mx-auto">
             <div class="font-headline-md text-xl text-primary tracking-tight">Lívia Ghirardi</div>
             <div class="flex gap-6 font-label-caps text-xs uppercase tracking-widest">
-                <a href="https://github.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" class="text-text-secondary hover:text-primary transition-colors">LinkedIn</a>
-                <a href="mailto:seu-email@exemplo.com" class="text-text-secondary hover:text-primary transition-colors">Email</a>
+                <a href="https://github.com" target="_blank"
+                    class="text-text-secondary hover:text-primary transition-colors">GitHub</a>
+                <a href="https://linkedin.com" target="_blank"
+                    class="text-text-secondary hover:text-primary transition-colors">LinkedIn</a>
+                <a href="mailto:seu-email@exemplo.com"
+                    class="text-text-secondary hover:text-primary transition-colors">Email</a>
             </div>
             <p class="font-body-sm text-xs text-text-secondary text-center">
                 © 2026 Lívia Ghirardi • ADS Student & Software Developer
@@ -96,4 +209,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+
+</html>>

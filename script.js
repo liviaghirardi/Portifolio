@@ -31,3 +31,15 @@ tailwind.config = {
 
 // Aqui você pode adicionar interações futuras, como menu mobile ou animações extras.
 console.log("Portfólio de Lívia Ghirardi carregado com sucesso!");
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            const navElement = document.getElementById("main-nav");
+            if (navElement) {
+                navElement.innerHTML = data;
+            }
+        });
+});
