@@ -1,107 +1,119 @@
-<!-- Lista de Projetos -->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Projetos | Lívia Ghirardi</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden relative">
 
-    <!-- Projeto 1: Ciclo -->
-    <div class="glass-card p-6 rounded-xl space-y-6 flex flex-col justify-between group">
-        <div class="space-y-4">
-            <div
-                class="aspect-[16/9] w-full relative overflow-hidden rounded-lg bg-surface-secondary flex items-center justify-center">
-                <img src="assets/logo_ciclo.png" alt="Prévia do Projeto Ciclo"
-                    class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <div class="flex justify-between items-center">
-                <h3 class="text-xl font-headline-md text-text-primary">Ciclo</h3>
-                <span
-                    class="px-2.5 py-0.5 rounded-full bg-outline/20 font-code-md text-[10px] text-text-secondary uppercase">Web
-                    App</span>
-            </div>
-            <p class="text-text-secondary text-sm">
-                Plataforma web informativa focada na conscientização sobre a violência contra a mulher, detalhando o
-                "Ciclo da Violência" e redes de apoio.
+    <div class="fixed inset-0 z-[-1] pointer-events-none bg-grid"></div>
+
+    <!-- TopNavBar Dinâmico -->
+    <nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 z-50 transition-all duration-300" id="main-nav">
+    </nav>
+
+    <main class="w-full max-w-[1200px] mx-auto px-6 pt-32 pb-24 space-y-20">
+        
+        <!-- Header da Página -->
+        <section class="space-y-4">
+            <span class="font-code-md text-xs text-primary uppercase tracking-widest">// PORTFOLIO</span>
+            <h1 class="text-4xl md:text-5xl font-headline-xl text-text-primary glow-text">
+                Todos os meus <span class="text-primary">projetos.</span>
+            </h1>
+            <p class="font-body-lg text-text-secondary max-w-2xl">
+                Uma seleção completa dos meus trabalhos técnicos, aplicações web e desenvolvimentos acadêmicos.
             </p>
-        </div>
-        <div class="space-y-4 pt-4 border-t border-outline-variant/20">
-            <div class="flex gap-2 flex-wrap">
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">HTML5</span>
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">CSS</span>
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">JavaScript</span>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://conscientizacao-clicodaviolencia.vercel.app" target="_blank"
-                    class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver
-                    Projeto</a>
-                <a href="https://github.com/liviaghirardi/conscientizacao-clicodaviolencia" target="_blank"
-                    class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Projeto 2: Bibliotech -->
-    <div class="glass-card p-6 rounded-xl space-y-6 flex flex-col justify-between group">
-        <div class="space-y-4">
-            <div
-                class="aspect-[16/9] w-full relative overflow-hidden rounded-lg bg-surface-secondary flex items-center justify-center">
-                <img src="assets/logo_blibiotech.jpg" alt="Prévia do Projeto Bibliotech"
-                    class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
-            </div>
-            <div class="flex justify-between items-center">
-                <h3 class="text-xl font-headline-md text-text-primary">Bibliotech</h3>
-                <span
-                    class="px-2.5 py-0.5 rounded-full bg-outline/20 font-code-md text-[10px] text-text-secondary uppercase">Sistema
-                    Web</span>
-            </div>
-            <p class="text-text-secondary text-sm">
-                Sistema de gerenciamento de biblioteca voltado para otimizar o controle de acervos, empréstimos de
-                livros e cadastros de usuários de forma prática.
-            </p>
-        </div>
-        <div class="space-y-4 pt-4 border-t border-outline-variant/20">
-            <div class="flex gap-2 flex-wrap">
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">HTML5</span>
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">CSS</span>
-                <span
-                    class="px-2.5 py-1 rounded bg-secondary-container/20 border border-border-accent font-code-md text-[10px] text-primary">JavaScript</span>
-            </div>
-            <div class="flex gap-4">
-                <a href="https://blibiotech.vercel.app" target="_blank"
-                    class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver
-                    Projeto</a>
-                <a href="https://github.com/liviaghirardi/Blibiotech" target="_blank"
-                    class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
-            </div>
-        </div>
-    </div>
+        <!-- Lista de Projetos -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <!-- Card: Mais projetos sendo adicionados -->
-    <div
-        class="glass-card p-8 rounded-xl flex flex-col items-center justify-center text-center space-y-4 border-dashed border-2 border-outline-variant/40 bg-surface/30 md:col-span-2 py-16">
-        <div
-            class="w-12 h-12 rounded-full bg-secondary-container/30 border border-border-accent flex items-center justify-center text-primary">
-            <span class="material-symbols-outlined animate-spin">autorenew</span>
-        </div>
-        <div class="space-y-2 max-w-md">
-            <h3 class="text-xl font-headline-md text-text-primary">Mais projetos em desenvolvimento...</h3>
-            <p class="text-text-secondary text-xs">
-                Estou sempre codando, explorando novas tecnologias e construindo novas soluções. Volte em breve para
-                conferir as novidades!
-            </p>
-        </div>
-        <div class="pt-2">
-            <a href="https://github.com/liviaghirardi" target="_blank"
-                class="inline-flex items-center gap-2 text-xs font-label-caps uppercase tracking-wider text-primary border border-border-accent px-6 py-2.5 rounded-full hover:bg-secondary-container/10 transition-colors">
-                <span>Acompanhar no GitHub</span>
-                <span class="material-symbols-outlined text-sm">open_in_new</span>
-            </a>
-        </div>
-    </div>
+            <!-- Projeto 1: Ciclo -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                <div class="h-64 w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center p-4">
+                    <img src="assets/logo_ciclo.png" alt="Prévia do Projeto Ciclo" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-2xl font-headline-md text-text-primary">Ciclo</h3>
+                            <span class="px-2.5 py-0.5 rounded-full bg-outline/20 font-code-md text-[10px] text-text-secondary uppercase">Web App</span>
+                        </div>
+                        <p class="text-text-secondary text-sm">
+                            Plataforma web informativa focada na conscientização sobre a violência contra a mulher, detalhando o "Ciclo da Violência" e redes de apoio.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="https://conscientizacao-clicodaviolencia.vercel.app" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
+                        <a href="https://github.com/liviaghirardi/conscientizacao-clicodaviolencia" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-</section>
+            <!-- Projeto 2: Bibliotech -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col">
+                <div class="h-64 w-full relative overflow-hidden bg-surface-secondary flex items-center justify-center p-4">
+                    <img src="assets/logo_blibiotech.jpg" alt="Prévia do Projeto Bibliotech" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-2xl font-headline-md text-text-primary">Bibliotech</h3>
+                            <span class="px-2.5 py-0.5 rounded-full bg-outline/20 font-code-md text-[10px] text-text-secondary uppercase">Sistema Web</span>
+                        </div>
+                        <p class="text-text-secondary text-sm">
+                            Sistema de gerenciamento de biblioteca voltado para otimizar o controle de acervos, empréstimos de livros e cadastros de usuários de forma prática.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">HTML5</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">CSS</span>
+                            <span class="px-3 py-1 rounded-full bg-secondary-container/30 border border-border-accent font-code-md text-xs text-primary">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 pt-4">
+                        <a href="https://blibiotech.vercel.app" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-white bg-[#8B5CF6] px-4 py-2 rounded hover:bg-primary-container transition-colors inline-block">Ver Projeto</a>
+                        <a href="https://github.com/liviaghirardi/Blibiotech" target="_blank" class="text-xs font-label-caps uppercase tracking-wider text-text-secondary border border-outline px-4 py-2 rounded hover:text-primary transition-colors inline-block">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-<!-- Footer -->
-<footer class="bg-surface-secondary border-t border-outline-variant/10 w-full py-12" id="main-footer">
-</footer>
+            <!-- Card: Mais projetos sendo adicionados -->
+            <div class="glass-card p-8 rounded-xl flex flex-col items-center justify-center text-center space-y-4 border-dashed border-2 border-outline-variant/40 bg-surface/30 md:col-span-2 py-16">
+                <div class="w-12 h-12 rounded-full bg-secondary-container/30 border border-border-accent flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined animate-spin">autorenew</span>
+                </div>
+                <div class="space-y-2 max-w-md">
+                    <h3 class="text-xl font-headline-md text-text-primary">Mais projetos em desenvolvimento...</h3>
+                    <p class="text-text-secondary text-xs">
+                        Estou sempre codando, explorando novas tecnologias e construindo novas soluções. Volte em breve para conferir as novidades!
+                    </p>
+                </div>
+                <div class="pt-2">
+                    <a href="https://github.com/liviaghirardi" target="_blank" class="inline-flex items-center gap-2 text-xs font-label-caps uppercase tracking-wider text-primary border border-border-accent px-6 py-2.5 rounded-full hover:bg-secondary-container/10 transition-colors">
+                        <span>Acompanhar no GitHub</span>
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Dinâmico -->
+    <footer class="bg-surface-secondary border-t border-outline-variant/10 w-full py-12" id="main-footer">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
