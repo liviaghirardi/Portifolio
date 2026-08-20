@@ -1,5 +1,7 @@
 <div class="flex justify-between items-center px-6 py-4 w-full max-w-[1200px] mx-auto">
     <a class="font-headline-md text-2xl font-bold text-text-primary tracking-tight" href="index.html">Lívia Ghirardi</a>
+    
+    <!-- Menu Desktop -->
     <div class="hidden md:flex gap-8 items-center">
         <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="index.html#sobre">Sobre</a>
         <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="habilidades.html">Habilidades</a>
@@ -7,8 +9,18 @@
         <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="formacao.html">Formação</a>
         <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest hover:text-primary transition-colors" href="experiencias.html">Experiências</a>
     </div>
-    <a class="hidden md:inline-flex items-center justify-center bg-[#8B5CF6] text-white px-6 py-2.5 rounded-full font-label-caps text-xs uppercase tracking-wider hover:shadow-[0_0_15px_rgba(139,92,246,0.5)] transition-all duration-300" href="https://github.com" target="_blank">
-        GitHub
-    </a>
 
+    <!-- Botão Hambúrguer (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-text-primary focus:outline-none">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+</div>
+
+<!-- Menu Mobile (Escondido por padrão) -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-outline-variant/20 px-6 py-4 flex flex-col gap-4">
+    <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest" href="index.html#sobre">Sobre</a>
+    <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest" href="habilidades.html">Habilidades</a>
+    <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest" href="projetos.html">Projetos</a>
+    <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest" href="formacao.html">Formação</a>
+    <a class="text-text-secondary font-label-caps text-xs uppercase tracking-widest" href="experiencias.html">Experiências</a>
 </div>

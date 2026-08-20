@@ -61,3 +61,20 @@ document.addEventListener("DOMContentLoaded", function() {
             if (footerElement) footerElement.innerHTML = data;
         });
 });
+
+// Aguarda o conteúdo do menu ser injetado via fetch
+const checkMenu = setInterval(() => {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuBtn && mobileMenu) {
+        clearInterval(checkMenu); // Para de procurar após encontrar
+        
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+            // Muda o ícone de menu para fechar (close)
+            const icon = menuBtn.querySelector(".material-symbols-outlined");
+            icon.textContent = mobileMenu.classList.contains("hidden") ? "menu" : "close";
+        });
+    }
+}, 100);
